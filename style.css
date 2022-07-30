@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,49 +9,105 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
- /* Header Content */
-
- header {
+/* HEADER */
+header {
     background-color: #1f2937;
     padding: 1em 13em;
-    display: flex;
- }
+} 
 
-
-
- /* Navagation Links */
-
- #logo {
+#logo {
     font-size: 24px;
     font-weight: 900;
     color: #F9FAF8;
-    align-items: flex-start;
 }
 
 .nav {
-    font-size: 16px;
+    display: flex;
     justify-content: space-between;
     align-items: baseline;
+
 }
 
-.right-side {
-    
-}
-
-
-
-
-
-.image-placeholder {
-    background-color: #eee; 
+.nav ul {
+    list-style-type: none;
     display: flex;
-    height: 180px;
-    margin: 5px;
-    width: 260px;
+    gap: 1.5em;
+
 }
 
-.image-placeholder > h4 {
-    align-self: center;
+.second-container {
+    margin: 8em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.second-container .left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.second-container .right {
+    flex-shrink: 0;
+    width: 50%;
+}
+.left h1 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+ .left p {
+    font-size: 18px;
+    color: #E5E7EB;
+    text-decoration: none;
+ }
+
+
+ .placeholder {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 215px;
+ }
+
+ .sign-up {
+    padding: 7px 1em;
+    width: 120px;
+    background-color: #3882F6;
+    border-radius: 8px; 
+ }
+
+ main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 13em;
+    margin-top: 3em;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3em 0 6em 0;
+}
+
+.card {
     text-align: center;
-    width: 100%;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+
+.square {
+    border: 4px solid #3882F6;
+    border-radius: 20px;
+    width: 160px;
+    height: 160px;
 }
